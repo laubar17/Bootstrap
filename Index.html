@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MarketOnline - Inicio</title>
+
+<!-- Bootstrap CSS -->
+
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+>
+
+
+</head>
+
+<body class="bg-light">
+
+
+<!-- ==================================================
+     BARRA DE NAVEGACIÓN
+=================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+
+        <!-- Nombre de la tienda -->
+
+        <a
+            class="navbar-brand fw-bold"
+            href="index.html"
+        >
+            MarketOnline
+        </a>
+
+
+        <!-- Botón para celular -->
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+        >
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- Menú -->
+
+        <div
+            class="collapse navbar-collapse"
+            id="menuPrincipal"
+        >
+
+            <ul class="navbar-nav ms-auto">
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="index.html"
+                    >
+                        Inicio
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="categorias.html"
+                    >
+                        Categorías
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="productos.html"
+                    >
+                        Productos
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="contacto.html"
+                    >
+                        Contacto
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ==================================================
+     PRESENTACIÓN PRINCIPAL
+=================================================== -->
+
+<header class="container py-5">
+
+    <div class="row align-items-center">
+
+
+        <!-- Texto -->
+
+        <div class="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+
+            <p class="text-primary fw-bold mb-2">
+                BIENVENIDO A MARKETONLINE
+            </p>
+
+
+            <h1 class="display-4 fw-bold">
+                Todo lo que buscás,
+                <span class="text-primary">
+                    en un solo lugar.
+                </span>
+            </h1>
+
+
+            <p class="lead text-secondary">
+
+                Descubrí tecnología, ropa, accesorios,
+                juguetes y mucho más.
+
+            </p>
+
+
+            <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-lg-start">
+
+
+                <a
+                    href="productos.html"
+                    class="btn btn-primary btn-lg"
+                >
+                    Ver productos
+                </a>
+
+
+                <a
+                    href="categorias.html"
+                    class="btn btn-outline-dark btn-lg"
+                >
+                    Explorar categorías
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Logo -->
+
+        <div class="col-12 col-lg-6 text-center">
+
+            <img
+                src="img/logo.png"
+                alt="Logo de MarketOnline"
+                class="img-fluid"
+                style="max-width: 400px;"
+            >
+
+        </div>
+
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================================
+     CARRUSEL DE PRODUCTOS DESTACADOS
+=================================================== -->
+
+<section class="container pb-5">
+
+
+    <div class="text-center mb-4">
+
+        <h2 class="fw-bold">
+            Productos destacados
+        </h2>
+
+        <p class="text-secondary">
+            Conocé algunos de los productos disponibles
+            en nuestra tienda.
+        </p>
+
+    </div>
+
+
+
+    <div
+        id="carruselProductos"
+        class="carousel slide shadow rounded overflow-hidden"
+        data-bs-ride="carousel"
+    >
+
+
+        <!-- Indicadores -->
+
+        <div class="carousel-indicators">
+
+            <button
+                type="button"
+                data-bs-target="#carruselProductos"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Producto 1"
+            ></button>
+
+
+            <button
+                type="button"
+                data-bs-target="#carruselProductos"
+                data-bs-slide-to="1"
+                aria-label="Producto 2"
+            ></button>
+
+
+            <button
+                type="button"
+                data-bs-target="#carruselProductos"
+                data-bs-slide-to="2"
+                aria-label="Producto 3"
+            ></button>
+
+        </div>
+
+
+
+        <!-- Contenido -->
+
+        <div class="carousel-inner">
+
+
+            <!-- PRODUCTO 1 -->
+
+            <div class="carousel-item active">
+
+                <img
+                    src="img/auriculares.jpg"
+                    class="d-block mx-auto"
+                    alt="Auriculares Bluetooth"
+                    style="height: 350px; width: 100%; object-fit: contain;"
+                >
+
+
+                <div class="carousel-caption d-block">
+
+                    <div class="bg-dark bg-opacity-75 rounded p-3">
+
+                        <h3 class="fw-bold">
+                            Auriculares Bluetooth
+                        </h3>
+
+                        <p>
+                            Disfrutá de tu música sin cables.
+                        </p>
+
+                        <a
+                            href="productos.html"
+                            class="btn btn-primary"
+                        >
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCTO 2 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="img/remera.jpg"
+                    class="d-block mx-auto"
+                    alt="Remera básica"
+                    style="height: 350px; width: 100%; object-fit: contain;"
+                >
+
+
+                <div class="carousel-caption d-block">
+
+                    <div class="bg-dark bg-opacity-75 rounded p-3">
+
+                        <h3 class="fw-bold">
+                            Remera básica
+                        </h3>
+
+                        <p>
+                            Comodidad y estilo para todos los días.
+                        </p>
+
+                        <a
+                            href="productos.html"
+                            class="btn btn-primary"
+                        >
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PRODUCTO 3 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="img/reloj.jpg"
+                    class="d-block mx-auto"
+                    alt="Reloj clásico"
+                    style="height: 350px; width: 100%; object-fit: contain;"
+                >
+
+
+                <div class="carousel-caption d-block">
+
+                    <div class="bg-dark bg-opacity-75 rounded p-3">
+
+                        <h3 class="fw-bold">
+                            Reloj clásico
+                        </h3>
+
+                        <p>
+                            Un diseño elegante para cualquier ocasión.
+                        </p>
+
+                        <a
+                            href="productos.html"
+                            class="btn btn-primary"
+                        >
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Botón anterior -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carruselProductos"
+            data-bs-slide="prev"
+        >
+
+            <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+            ></span>
+
+            <span class="visually-hidden">
+                Anterior
+            </span>
+
+        </button>
+
+
+
+        <!-- Botón siguiente -->
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carruselProductos"
+            data-bs-slide="next"
+        >
+
+            <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+            ></span>
+
+            <span class="visually-hidden">
+                Siguiente
+            </span>
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CATEGORÍAS
+=================================================== -->
+
+<section class="bg-white py-5">
+
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <h2 class="fw-bold">
+                Explorá nuestras categorías
+            </h2>
+
+            <p class="text-secondary">
+                Encontrá productos para todos los gustos.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- TECNOLOGÍA -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="img/tecnologia.png"
+                        class="card-img-top"
+                        alt="Tecnología"
+                        style="height: 220px; object-fit: cover;"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <h3 class="h5 fw-bold">
+                            Tecnología
+                        </h3>
+
+                        <p class="text-secondary">
+                            Electrónica y accesorios tecnológicos.
+                        </p>
+
+                        <a
+                            href="productos.html"
+                            class="btn btn-outline-primary"
+                        >
+                            Ver productos
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ROPA -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="img/ropa.png"
+                        class="card-img-top"
+                        alt="Ropa"
+                        style="height: 220px; object-fit: cover;"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <h3 class="h5 fw-bold">
+                            Ropa
+                        </h3>
+
+                        <p class="text-secondary">
+                            Prendas para diferentes estilos.
+                        </p>
+
+                        <a
+                            href="productos.html"
+                            class="btn btn-outline-primary"
+                        >
+                            Ver productos
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- JOYAS -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="img/joyas.png"
+                        class="card-img-top"
+                        alt="Joyas"
+                        style="height: 220px; object-fit: cover;"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <h3 class="h5 fw-bold">
+                            Joyas
+                        </h3>
+
+                        <p class="text-secondary">
+                            Accesorios para complementar tu estilo.
+                        </p>
+
+                        <a
+                            href="productos.html"
+                            class="btn btn-outline-primary"
+                        >
+                            Ver productos
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MODA -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="img/moda.png"
+                        class="card-img-top"
+                        alt="Moda y accesorios"
+                        style="height: 220px; object-fit: cover;"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <h3 class="h5 fw-bold">
+                            Moda y accesorios
+                        </h3>
+
+                        <p class="text-secondary">
+                            Complementos para tu estilo.
+                        </p>
+
+                        <a
+                            href="productos.html"
+                            class="btn btn-outline-primary"
+                        >
+                            Ver productos
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- JUGUETES -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <img
+                        src="img/juguetes.png"
+                        class="card-img-top"
+                        alt="Juguetes"
+                        style="height: 220px; object-fit: cover;"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <h3 class="h5 fw-bold">
+                            Juguetes
+                        </h3>
+
+                        <p class="text-secondary">
+                            Juegos para divertirse y aprender.
+                        </p>
+
+                        <a
+                            href="productos.html"
+                            class="btn btn-outline-primary"
+                        >
+                            Ver productos
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MÁS PRODUCTOS -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 border-0 shadow-sm bg-dark text-white">
+
+                    <div class="card-body text-center d-flex flex-column justify-content-center">
+
+                        <h3 class="h4 fw-bold">
+                            ¿Buscás algo más?
+                        </h3>
+
+                        <p class="text-light">
+                            Tenemos muchos más productos
+                            disponibles para vos.
+                        </p>
+
+                        <a
+                            href="categorias.html"
+                            class="btn btn-light"
+                        >
+                            Ver categorías
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     BENEFICIOS
+=================================================== -->
+
+<section class="container py-5">
+
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">
+            ¿Por qué comprar en MarketOnline?
+        </h2>
+
+    </div>
+
+
+
+    <div class="row g-4 text-center">
+
+
+        <!-- BENEFICIO 1 -->
+
+        <div class="col-12 col-md-4">
+
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+
+                <div class="display-5 mb-3">
+                    🛒
+                </div>
+
+                <h3 class="h5 fw-bold">
+                    Variedad
+                </h3>
+
+                <p class="text-secondary mb-0">
+                    Diferentes categorías y productos
+                    en un solo lugar.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BENEFICIO 2 -->
+
+        <div class="col-12 col-md-4">
+
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+
+                <div class="display-5 mb-3">
+                    📱
+                </div>
+
+                <h3 class="h5 fw-bold">
+                    Responsive
+                </h3>
+
+                <p class="text-secondary mb-0">
+                    Navegá cómodamente desde computadora,
+                    tablet o celular.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BENEFICIO 3 -->
+
+        <div class="col-12 col-md-4">
+
+            <div class="p-4 bg-white rounded shadow-sm h-100">
+
+                <div class="display-5 mb-3">
+                    ⭐
+                </div>
+
+                <h3 class="h5 fw-bold">
+                    Calidad
+                </h3>
+
+                <p class="text-secondary mb-0">
+                    Seleccionamos productos pensando
+                    en nuestros clientes.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     LLAMADA A LA ACCIÓN
+=================================================== -->
+
+<section class="bg-primary text-white py-5">
+
+
+    <div class="container text-center">
+
+
+        <h2 class="fw-bold">
+            ¿Ya encontraste lo que buscabas?
+        </h2>
+
+
+        <p class="lead">
+            Explorá todos nuestros productos.
+        </p>
+
+
+        <a
+            href="productos.html"
+            class="btn btn-light btn-lg"
+        >
+            Ver catálogo completo
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+=================================================== -->
+
+<footer class="bg-dark text-white py-4">
+
+
+    <div class="container">
+
+
+        <div class="row text-center text-md-start">
+
+
+            <!-- Información -->
+
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+
+                <h5 class="fw-bold">
+                    MarketOnline
+                </h5>
+
+                <p class="text-secondary mb-0">
+                    Tu tienda online de productos variados.
+                </p>
+
+            </div>
+
+
+
+            <!-- Navegación -->
+
+            <div class="col-12 col-md-6 text-md-end">
+
+                <h6>
+                    Navegación
+                </h6>
+
+
+                <a
+                    href="index.html"
+                    class="text-white text-decoration-none me-3"
+                >
+                    Inicio
+                </a>
+
+
+                <a
+                    href="categorias.html"
+                    class="text-white text-decoration-none me-3"
+                >
+                    Categorías
+                </a>
+
+
+                <a
+                    href="productos.html"
+                    class="text-white text-decoration-none me-3"
+                >
+                    Productos
+                </a>
+
+
+                <a
+                    href="contacto.html"
+                    class="text-white text-decoration-none"
+                >
+                    Contacto
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <hr>
+
+
+        <p class="text-center text-secondary mb-0">
+
+            © 2026 MarketOnline - Todos los derechos reservados.
+
+        </p>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==================================================
+     BOOTSTRAP JAVASCRIPT
+=================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>
