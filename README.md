@@ -1,4 +1,4 @@
 # Bootstrap Actividad 4 y 5
-Pagina web desarrollada con bootstrap
+Página web desarrollada con bootstrap
 
-##Integrantes: Michael Huaman, Lautaro Barbero, 
+##Integrantes: Michael Huaman, Lautaro Barbero, Nadia Gisele Bruno
